@@ -18,13 +18,16 @@
         <span class="title">Full Stack Developer</span><br>
         <span class="title">Electrical & Production Engineer</span>
       </div>
-      <nav class="header__menu">
+      <nav class="header__menu visible">
         <ul class="menu__list">
           <li class="meny__itemm">
             <a href="#about" class="menu__link">About Me</a>
           </li>
           <li class="meny__itemm">
             <a href="#portfolio" class="menu__link">Projects</a>
+          </li>
+          <li class="meny__itemm">
+            <a href="#recommendations" class="menu__link">Recommendations</a>
           </li>
           <li class="meny__itemm">
             <a href="#contact" class="menu__link">Contact</a>
@@ -76,29 +79,154 @@
 
   </section>
 
+<section id="overlay" class="hidden">
+  <iframe allowfullscreen="true"
+    src="https://www.youtube.com/embed/aVUuF8roI0o">
+  </iframe>
+  <button id="closeVideo">Close</button>
+</section>
+
 
   <section id="portfolio" class="page__works works">
     <p class="section_title"><strong>My</strong> Projects</p>
     <div class="projects_container">
       <div class="project_grid">
+
         <div class="project">
           <p>The Chessed Hub</p>
-          <iframe width="100%"
-            src="https://www.youtube.com/embed/aVUuF8roI0o">
-          </iframe>
-          <p class="stack">#Full Stack #JavaScript #Node.js #PostgreSQL</p>
+          <img id="showChessedVideo" src="./img/chessed-hub-screenshot.png" alt="">
+          <p class="stack">#HTML #CSS #JavaScript #Node.js #PostgreSQL</p>
           <p>In this platform people in need write their stories, that are saved in the database.</p>
           <p>Donators log in, see the stories, and select who they want to help.</p>
           <p>Once there is a match, the server sends an email informing the person in need that a match was found 
             and he or she will receive the money in some days.</p>
+            <div class="projectFooter">
+              <div id="watchChessedVideoIcon">
+                <i class="fa-regular fa-circle-play"></i>Watch presentation
+              </div>
+              <div>
+                <a href="https://github.com/gitelmanmarcelo/The-Chessed-Hub" target="_blank"><i class="fa-regular fa-file-code"></i> See Code</a>
+              </div>
+            </div>
         </div>
-        <div class="project"></div>
-        <div class="project"></div>
-        <div class="project"></div>
-        <div class="project"></div>
+
+        <div class="project">
+          <p>Happy Todo List</p>
+          <a href="https://gitelmanmarcelo.github.io/Happy-To-Do-List/" target="_blank">
+          <img src="./img/Happy-todo-screenshot.png" alt=""></a>
+          <p class="stack">#HTML #CSS #JavaScript #LocalStorage</p>
+          <p>This a different kind of todo list.</p>
+          <p>You can see days left to complete if pending, or days past the due date if expired.</p>
+          <p>Pending tasks are yellow, completed tasks turn to green and expired turn to red.</p>
+          <div class="projectFooter">
+            <div>
+              <a href="https://github.com/gitelmanmarcelo/Happy-To-Do-List" target="_blank"><i class="fa-regular fa-file-code"></i> See Code</a>
+            </div>
+            <div>
+              <a href="https://gitelmanmarcelo.github.io/Happy-To-Do-List/" target="_blank"><i class="fa-solid fa-window-maximize"></i> Go to site</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project">
+          <p>Movies & Series</p>
+          <a href="https://gitelmanmarcelo.github.io/Movies-and-series/" target="_blank">
+            <img src="./img/movies-screenshot.png" alt=""></a>
+            <p class="stack">#HTML #CSS #JavaScript #React #Redux</p>
+            <p>In this application I used React and Redux to retrieve data about movies and series from the imdb API</p>
+            <div class="projectFooter">
+              <div>
+                <a href="https://github.com/gitelmanmarcelo/Movies-and-series" target="_blank"><i class="fa-regular fa-file-code"></i> See Code</a>
+              </div>
+              <div>
+                <a href="https://gitelmanmarcelo.github.io/Movies-and-series/" target="_blank"><i class="fa-solid fa-window-maximize"></i> Go to site</a>
+              </div>
+            </div>
+        </div>
+        
+        <div class="project">
+          <p>Tic-tac-toe</p>
+          <a href="https://gitelmanmarcelo.github.io/tic-tac-toe/" target="_blank">
+          <img src="./img/tic-tac-toe-screenshot.png" alt=""></a>
+          <p class="stack">#HTML #CSS #JavaScript</p>
+          <p>This is a classic Tic tac toe against the computer</p>
+          <p>In the easy mode you can win, but I dare you to beat my code in the hard mode.</p>
+          <p>There are some solutions in the code that worth taking a look</p>
+          <div class="projectFooter">
+            <div>
+              <a href="https://github.com/gitelmanmarcelo/tic-tac-toe" target="_blank"><i class="fa-regular fa-file-code"></i> See Code</a>
+            </div>
+            <div>
+              <a href="https://gitelmanmarcelo.github.io/tic-tac-toe/" target="_blank"><i class="fa-solid fa-window-maximize"></i> Go to site</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project">
+          <p>70 lines Memory Card Game</p>
+          <a href="https://gitelmanmarcelo.github.io/70-lines-JS-Memory-Card-Game/" target="_blank">
+            <img src="./img/70-lines-memory-screenshot.png" alt=""></a>
+            <p class="stack">#HTML #CSS #JavaScript</p>
+            <p>This is a classic Memory Card Game</p>
+            <p>Written in 70 lines of JavaScript</p>
+            <div class="projectFooter">
+              <div>
+                <a href="https://github.com/gitelmanmarcelo/70-lines-JS-Memory-Card-Game" target="_blank"><i class="fa-regular fa-file-code"></i> See Code</a>
+              </div>
+              <div>
+                <a href="https://gitelmanmarcelo.github.io/70-lines-JS-Memory-Card-Game/" target="_blank"><i class="fa-solid fa-window-maximize"></i> Go to site</a>
+              </div>
+            </div>
+        </div>
+
+
         <div class="project"></div>
       </div>
     </div>
+  </section>
+
+  <section id="recommendations">
+    <p class="section_title">Recommendations</p>
+    <div class="recommContainer">
+      <div class="recommBox">
+        <i class="fa-solid fa-quote-left"></i>
+        <p>I had the pleasure of working with Marcelo Gitelman for 10 months at Tachyonix. During his time with us, he consistently demonstrated a strong work ethic and dedication to his role. He is a valuable member of the team and contributed significantly to our success.
+          Marcelo consistently demonstrated excellent problem-solving skills and the ability to think creatively. He was always willing to go beyond to ensure that tasks were completed efficiently and effectively.           
+          In addition to his technical skills, Marcelo was a pleasure to work with. He is friendly, professional, and always had a positive attitude. His communication skills were top-notch, and he was able to effectively collaborate with team members across departments.
+          I highly recommend Marcelo for any future opportunities. I have no doubt that he will be an asset to any team he will join.</p>
+          <i class="fa-solid fa-quote-right alignRight"></i>
+          <p>Marcelo Korn - CEO Tachyonix</p>
+      </div>
+      <div class="baloonBox"><i class="fa-regular fa-comment-dots"></i></div>
+      <div class="baloonBox flip"><i class="fa-solid fa-comment-dots"></i></div>
+      <div class="recommBox">
+        <i class="fa-solid fa-quote-left"></i>
+        <p>Marcelo is a highly skilled and knowledgeable leader, he is a good listener and always pays attention to the details. He is not only friendly and helpful but also goes above and beyond to maintain the team spirit. Moreover, I have seen him working his way through challenges and crises. He uses innovative approaches to tackling and solving problems. He is such an inspiration for me, and I feel proud to have worked under his guidance</p>
+        <i class="fa-solid fa-quote-right alignRight"></i>
+        <p>Batia Zinger - Software Developer at Tachyonix</p>
+      </div>
+      <div class="recommBox">
+        <i class="fa-solid fa-quote-left"></i>
+        <p>Marcelo is a dedicated professional that works in a very organized and thorough way. I witnessed his work and results, and can attest he strives for excellence in what he does, learning and reading about the craft.
+          In the testing area, Marcelo quickly grasped the principles and expanded his knowledge and skills with courses and articles, to the point he was able to coach the team in test planning and exploratory methods.</p>
+        <i class="fa-solid fa-quote-right alignRight"></i>
+        <p>Shmuel Gershon - Test Engineer at Mobileye</p>
+      </div>
+      <div class="baloonBox"><i class="fa-regular fa-comment-dots"></i></div>
+      <div class="baloonBox flip"><i class="fa-solid fa-comment-dots"></i></div>
+      <div class="recommBox">
+        <i class="fa-solid fa-quote-left"></i>
+        <p>Before talking about the technical side of Marcelo Gitelman, I would like to start talking about the human being, a great leader who knows how to lead amicably, with care, keep a team together, and also demonstrated a strong work ethic and dedication to his role. On the technical side, I lack words to express the level of knowledge, and excellent technical qualification that makes it easy to overcome challenges. It is very up-to-date with new technologies and market trends. He is a great inspiration to me and I am proud to have worked with him.</p>
+        <i class="fa-solid fa-quote-right alignRight"></i>
+        <p>Rogerio Balassiano - CTO & Chief Architect at Tachyonix</p>
+    </div>
+      <div class="recommBox">
+        <i class="fa-solid fa-quote-left"></i>
+        <p>Marcelo Gitelman is a terrific and highly knowledgeable leader. Marcelo is friendly, professional and always motivated the team. Just his presence made the work easy to resolve thanks to his awesome skills and helpful way for everyone. He is not only excellent in problem-solving but also thinks creatively to guide his coworkers in the best way. I feel proud to have worked under his wings and guidance and really grateful for all he has done for me. He is really someone who changed my life forever and taught me so much.</p>
+        <i class="fa-solid fa-quote-right alignRight"></i>
+        <p>Matheus H. R. de Souza - QA Analyst at Tachyonix</p>
+    </div>
+    <div class="baloonBox"><i class="fa-regular fa-comment-dots"></i></div>
   </section>
 
 
