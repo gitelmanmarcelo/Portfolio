@@ -11,47 +11,54 @@
   <title>CV Marcelo Gitelman</title>
   <body>
 
-  <header  class="header">
-    <div class="header__container">
+  <header>
+    <div id="nameContainer">
+      <div class="myName"><strong>Marcelo</strong> Gitelman</strong></div>
       <div>
-        <div class="myName"><strong>Marcelo</strong> Gitelman</strong></div><br>
         <span class="title">Full Stack Developer</span><br>
-        <span class="title">Electrical & Production Engineer</span>
+        <span class="title">Electrical & Production Engineer</span>  
       </div>
-      <nav class="header__menu visible">
-        <ul class="menu__list">
-          <li class="meny__itemm">
-            <a href="#about" class="menu__link">About Me</a>
-          </li>
-          <li class="meny__itemm">
-            <a href="#portfolio" class="menu__link">Projects</a>
-          </li>
-          <li class="meny__itemm">
-            <a href="#recommendations" class="menu__link">Recommendations</a>
-          </li>
-          <li class="meny__itemm">
-            <a href="#contact" class="menu__link">Contact</a>
-          </li>
-        </ul>
-      </nav>
     </div>
+    <nav>
+      <ul class="menuList">
+        <li>
+          <a href="#about" class="menuLink">About Me</a>
+        </li>
+        <li>
+          <a href="#portfolio" class="menuLink">Projects</a>
+        </li>
+        <li>
+          <a href="#recommendations" class="menuLink">Recommendations</a>
+        </li>
+        <li>
+          <a href="#contact" class="menuLink">Contact</a>
+        </li>
+      </ul>
+      <i id="menuIcon" class="fa-solid fa-bars"></i>
+    </nav>
+    <div class="dropdown">
+			<a href="#about">About Me</a>
+			<a href="#portfolio">Projects</a>
+			<a href="#recommendations">Recommendations</a>
+			<a href="#contact">Contact</a>
+		</div>
   </header>
 
 
-  <section id="about" class="about">
+  <section id="about" class="section">
 
-    <p class="section_title">About <strong> Me</strong></p>
-    <div class="about_image">
+    <p class="sectionTitle">About <strong> Me</strong></p>
+    <div class="aboutImage">
       <img src="img/marcelo-photo.jpg" alt="photo of Marcelo Gitelman">
     </div>
 
-      <div class="about__content">
+      <div class="aboutContent">
 
-          <div> <p class="subtitle" id="tools">tools:</p></div>
 
-          <div><p class="subtitle" id="skills">skills:</p></div>
 
-          <div id="about_left">
+          <div>
+            <div> <p class="subtitle" id="tools">tools:</p></div>
+            <div id="logosGrid">
               <div class="logo"><img src="img/javascript-logo.png" alt=""></div>
               <div class="logo"><img src="img/html-logo.png" alt=""></div>
               <div class="logo"><img src="img/css3-logo-png-transparent.png" alt=""></div>
@@ -61,9 +68,11 @@
               <div class="logo"><img src="img/java-small.png" alt=""></div>
               <div class="logo"><img src="img/cpp-certification.PNG" alt=""></div>
               <div class="logo"><img src="img/c-certification.PNG" alt=""></div>
+            </div>
           </div> 
 
-          <div id="about_right" class="text">
+          <div id="aboutRight" class="text">
+            <div><p class="subtitle" id="skills">skills:</p></div>
             <p>Strong communication & organization skills</p>
             <p>Problem solving</p> 
             <p>Attention to details</p>
@@ -87,10 +96,10 @@
 </section>
 
 
-  <section id="portfolio" class="page__works works">
-    <p class="section_title"><strong>My</strong> Projects</p>
-    <div class="projects_container">
-      <div class="project_grid">
+  <section id="portfolio" class="section">
+    <p class="sectionTitle"><strong>My</strong> Projects</p>
+    <div class="projectsContainer">
+      <div class="projectGrid">
 
         <div class="project">
           <p>The Chessed Hub</p>
@@ -163,18 +172,18 @@
         </div>
 
         <div class="project">
-          <p>70 lines Memory Card Game</p>
-          <a href="https://gitelmanmarcelo.github.io/70-lines-JS-Memory-Card-Game/" target="_blank">
-            <img src="./img/70-lines-memory-screenshot.png" alt=""></a>
+          <p>54 lines Memory Card Game</p>
+          <a href="https://gitelmanmarcelo.github.io/54-lines-JS-Memory-Card-Game/" target="_blank">
+            <img src="./img/54-lines-memory-screenshot.png" alt=""></a>
             <p class="stack">#HTML #CSS #JavaScript</p>
             <p>This is a classic Memory Card Game</p>
-            <p>Written in 70 lines of JavaScript</p>
+            <p>Written in 54 lines of JavaScript</p>
             <div class="projectFooter">
               <div>
-                <a href="https://github.com/gitelmanmarcelo/70-lines-JS-Memory-Card-Game" target="_blank"><i class="fa-regular fa-file-code"></i> See Code</a>
+                <a href="https://github.com/gitelmanmarcelo/54-lines-JS-Memory-Card-Game" target="_blank"><i class="fa-regular fa-file-code"></i> See Code</a>
               </div>
               <div>
-                <a href="https://gitelmanmarcelo.github.io/70-lines-JS-Memory-Card-Game/" target="_blank"><i class="fa-solid fa-window-maximize"></i> Go to site</a>
+                <a href="https://gitelmanmarcelo.github.io/54-lines-JS-Memory-Card-Game/" target="_blank"><i class="fa-solid fa-window-maximize"></i> Go to site</a>
               </div>
             </div>
         </div>
@@ -185,8 +194,8 @@
     </div>
   </section>
 
-  <section id="recommendations">
-    <p class="section_title">Recommendations</p>
+  <section id="recommendations" class="section">
+    <p class="sectionTitle">Recommendations</p>
     <div class="recommContainer">
       <div class="recommBox">
         <i class="fa-solid fa-quote-left"></i>
@@ -230,24 +239,24 @@
   </section>
 
 
-  <section  class="page__works works" id="contact">
-    <p class="section_title">Contact <strong>Me</strong></p>
-    <div class="contact_container">
-      <div class="contact_grid">
-        <div class="contact_box">
+  <section id="contact" class="section">
+    <p class="sectionTitle">Contact <strong>Me</strong></p>
+    <div class="contactContainer">
+      <div class="contactGrid">
+        <div class="contactBox">
           <a href="mailto:marcelo.gitelman@gmail.com"><i class="fa-regular fa-envelope"></i></a>
           <p><a href="mailto:marcelo.gitelman@gmail.com">marcelo.gitelman@gmail.com</a></p>
         </div>
-        <div class="contact_box">
+        <div class="contactBox">
           <a href="https://www.linkedin.com/in/marcelo-gitelman/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
           <p><a href="https://www.linkedin.com/in/marcelo-gitelman/" target="_blank">https://www.linkedin.com/in</a></p>
           <p><a href="https://www.linkedin.com/in/marcelo-gitelman/" target="_blank">/marcelo-gitelman/</a></p>
         </div>
-        <div class="contact_box">
+        <div class="contactBox">
           <a href="https://github.com/gitelmanmarcelo"  target="_blank"><i class="fa-brands fa-github"></i></a>
           <p><a href="https://github.com/gitelmanmarcelo"  target="_blank">https://github.com/gitelmanmarcelo</a></p>
         </div>
-        <div class="contact_box">
+        <div class="contactBox">
           <a href="tel:+972-53-478-2623"><i class="fa-solid fa-square-phone"></i></a>
           <p><a href="tel:+972-53-478-2623">+972-53-478-2623</a></p>
         </div>
