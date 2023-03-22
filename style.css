@@ -132,11 +132,11 @@ body{
     
     @media screen and (max-width: 420px) {
       header{
-        height: 25vh;
+        height: 26vh;
         }
 
       .dropdown {
-        top: 25vh;
+        top: 26vh;
       }
 
       .sectionTitle{
