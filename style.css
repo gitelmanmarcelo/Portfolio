@@ -294,8 +294,13 @@ margin: 0;
     padding: 0 0;
   }
 
+
   #aboutRight p {
-    margin-left: 0;
+    margin: 0.75rem auto;
+  }
+
+  #aboutRight p:first-of-type {
+    width: 190px;
   }
 
   #logosGrid div:hover {
@@ -303,9 +308,10 @@ margin: 0;
       height: 80px;
     }
     
-  #skills {
-  margin-top: 2rem;
+  #aboutRight div:first-of-type {
+    margin-top: 3rem;
   }
+  
   
 }
 
