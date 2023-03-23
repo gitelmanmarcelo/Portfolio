@@ -292,17 +292,21 @@ margin: 0;
     border-left: none;
     margin: 0 0;
     padding: 0 0;
-}
-
-#logosGrid div:hover {
-    width: 80px;
-    height: 80px;
   }
+
+  #aboutRight p {
+    margin-left: 0;
+  }
+
+  #logosGrid div:hover {
+      width: 80px;
+      height: 80px;
+    }
     
   #skills {
   margin-top: 2rem;
- 
-}
+  }
+  
 }
 
   
