@@ -14,7 +14,7 @@ const handleCloseVideoClick = (e) => {
 }
 
 document.querySelector('#showChessedVideo').addEventListener('click',handleVideoClick);
-document.querySelector('#watchChessedVideoIcon').addEventListener('click',handleVideoClick);
+document.querySelector('#click4VideoText').addEventListener('click',handleVideoClick);
 document.querySelector('#closeVideo').addEventListener('click',handleCloseVideoClick);
 
 document.querySelector('#menuIcon').addEventListener('click', () => {
@@ -24,3 +24,16 @@ document.querySelector('#menuIcon').addEventListener('click', () => {
 document.querySelectorAll('.dropdown a').forEach(el => el.addEventListener('click', () => {
   document.querySelector('.dropdown').classList.toggle('active');
 }));
+
+let letter = -1;
+
+setInterval(()=> {
+  if (letter !== -1) document.querySelectorAll("#comingSoon span")[letter].classList.toggle("light");
+  letter++;
+  if (letter > 9) letter = 0;
+  document.querySelectorAll("#comingSoon span")[letter].classList.toggle("light");
+},400);
+
+setInterval( () => {
+  document.querySelector("#click4VideoText").classList.toggle("flashingMsg");
+},700)

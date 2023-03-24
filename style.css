@@ -424,10 +424,44 @@ margin: 0;
   margin-bottom: 12px;
 }
 
-#watchChessedVideoIcon:hover {
-  cursor:pointer;
+#click4VideoText:hover {
+  cursor: pointer;
 }
 
+#click4VideoText {
+  position: absolute;
+  top: 15%;
+  left: 14%;
+  padding: 4px;
+  border-radius: 2px;
+  text-align: center;
+  transition: ease-in-out 0.2s;
+}
+
+#click4Video p {
+  font-weight: bolder;
+}
+
+.flashingMsg {
+  background-color: #27455C;
+  color: white;
+}
+
+.csoon p {
+  height: 4rem;
+}
+
+.csoon {
+  justify-content: center;
+  align-items: center;
+  font-size: 3rem;
+  text-align: center;
+}
+
+.light {
+  background-color:#00adb5;
+  border: 2px solid #27455C;
+}
 
 /********** RECOMMENDATIONS  ***************/
 
