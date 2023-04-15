@@ -1,4 +1,5 @@
-const handleVideoClick = (e) => {
+const handleVideoClick = (videoUrl) => {
+  document.querySelector('iframe').src = videoUrl;
   document.querySelector('#overlay').classList.remove('hidden');
   document.querySelector('#overlay').classList.add('visible');
   document.querySelector('nav').classList.remove('visible');
@@ -13,9 +14,17 @@ const handleCloseVideoClick = (e) => {
   document.querySelector('nav').classList.add('visible');
 }
 
-document.querySelector('#showChessedVideo').addEventListener('click',handleVideoClick);
-document.querySelector('#click4VideoText').addEventListener('click',handleVideoClick);
+document.querySelector('#showChessedVideo').addEventListener('click',
+() => handleVideoClick("https://www.youtube.com/embed/aVUuF8roI0o"));
+document.querySelector('#click4VideoText').addEventListener('click',
+() => handleVideoClick("https://www.youtube.com/embed/aVUuF8roI0o"));
 document.querySelector('#closeVideo').addEventListener('click',handleCloseVideoClick);
+
+document.querySelector('#showFMHVideo').addEventListener('click',
+() => handleVideoClick("https://www.youtube.com/embed/FhLnFFknEek"));
+document.querySelector('#click4FMHVideoText').addEventListener('click',
+() => handleVideoClick("https://www.youtube.com/embed/FhLnFFknEek"));
+document.querySelector('#closeFMHVideo').addEventListener('click',handleCloseVideoClick);
 
 document.querySelector('#menuIcon').addEventListener('click', () => {
   document.querySelector('.dropdown').classList.toggle('active');

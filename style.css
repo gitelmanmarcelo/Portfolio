@@ -377,6 +377,10 @@ margin: 0;
   position: relative;
 }
 
+.project p {
+  text-align: center;
+}
+
 @media screen and (max-width: 1250px) {
   .projectGrid {
     grid-template-columns: 1fr 1fr;
@@ -422,13 +426,14 @@ margin: 0;
   font-family: 'Roboto Mono', monospace;
   font-size: 0.8rem;
   margin-bottom: 12px;
+  text-align: center;
 }
 
-#click4VideoText:hover {
+#click4VideoText:hover, #click4FMHVideoText:hover {
   cursor: pointer;
 }
 
-#click4VideoText {
+#click4VideoText, #click4FMHVideoText {
   position: absolute;
   top: 15%;
   left: 14%;
@@ -438,8 +443,18 @@ margin: 0;
   transition: ease-in-out 0.2s;
 }
 
-#click4Video p {
+#click4FMHVideoText {
+  top: 25%;
+}
+
+#click4Video p , #click4FMHVideo p {
   font-weight: bolder;
+}
+
+#click4FMHVideoText p {
+  color: white;
+  background-color: grey;
+  opacity: 80%;
 }
 
 .flashingMsg {
