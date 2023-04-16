@@ -435,8 +435,10 @@ margin: 0;
 
 #click4VideoText, #click4FMHVideoText {
   position: absolute;
+  width: 100%;
   top: 10%;
-  left: 14%;
+  left: 0%;
+  background-color: transparent;
   padding: 4px;
   border-radius: 2px;
   text-align: center;
@@ -444,21 +446,24 @@ margin: 0;
 }
 
 #click4FMHVideoText {
+  display: flex;
+  justify-content: center;
   top: 20%;
+  color: #0058b5;
 }
 
 #click4Video p , #click4FMHVideo p {
   font-weight: bolder;
 }
 
-#click4FMHVideoText p {
+#click4FMHVideoText div {
+  width: 70%;
   font-weight: bolder;
-  color: #0058b5;
   background-color: white;
+
 }
 
 .flashingMsg {
-  background-color: #27455C;
   color: white;
 }
 
