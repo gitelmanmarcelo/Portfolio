@@ -452,9 +452,9 @@ margin: 0;
 }
 
 #click4FMHVideoText p {
-  color: white;
-  background-color: grey;
-  opacity: 80%;
+  font-weight: bolder;
+  color: #0058b5;
+  background-color: white;
 }
 
 .flashingMsg {
